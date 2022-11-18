@@ -1,0 +1,461 @@
+/* -------------- Styles -------------- */
+@import url("_variables.css");
+@import url("_reset.css");
+@import url("_global.css");
+@import url("_fonts.css");
+
+/* -------------- Page -------------- */
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--color-bg);
+}
+
+/* -------------- Header -------------- */
+.header {
+  padding: 10px 0;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav */
+.nav__list {
+  display: flex;
+  gap: 80px;
+}
+
+.nav__link,
+.sign-in__link {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+  transition: color .2s ease;
+}
+
+.nav__item:hover .nav__link,
+.sign-in:hover .sign-in__link  {
+  color: var(--color-text-lighter-hovered);
+}
+
+/* -------------- Hero -------------- */
+.hero {
+  height: 500px;
+  background-image: url("../assets/images/common/hero/hero-bgc-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px 0px 50px 80px var(--color-shadow);
+}
+
+/* -------------- About -------------- */
+.about {
+  padding: 20px 0;
+}
+
+.about__heading {
+  margin-bottom: 5px;
+  color: var(--color-text-light);
+}
+
+.about__description {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.hero__left {
+  max-width: 55%;
+}
+
+/* -------------- Stones -------------- */
+.stones {
+  padding: 80px 0;
+}
+
+.stones__heading {
+  margin-bottom: 20px;
+}
+
+.stones__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Stone */
+.stone {
+  position: relative;
+  flex: 0 1 calc(100% / 4 - 40px * 3 / 4);
+  overflow: hidden;
+  transition: box-shadow .5s ease;
+}
+
+.stone:hover {
+  box-shadow: 0px 0px 20px 10px;
+}
+
+.stone:hover .stone__img {
+  filter: brightness(15%);
+  transform: scale(1.3);
+}
+
+.stone:hover .stone__main {
+  transform: translateY(-140px);
+}
+
+.stone__img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: filter .3s ease, transform .55s ease;
+}
+
+.stone__main {
+  position: absolute;
+  padding: 10px;
+  width: 100%;
+  transform: translateY(20px);
+  transition: transform .5s ease;
+}
+
+.stone__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.stone__name {
+  font-size: 18px;
+  color: var(--color-text-lighter);
+}
+
+.stone__description {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.stone__rare {
+  font-weight: 500;
+}
+
+.stone__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stone__buy {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text-lighter);
+  background-color: var(--color-main);
+  border-radius: 5px;
+  transition: filter .2s ease;
+}
+
+.stone__buy:hover {
+  filter: brightness(130%);
+}
+
+.stone__price {
+  font-size: 14px;
+  color: var(--color-text-lighter);
+}
+
+/* -------------- Chests -------------- */
+.chests {
+  padding: 80px 0;
+}
+
+.chests__heading {
+  margin-bottom: 20px;
+}
+
+.chests__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Chest */
+.chest {
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow .5s ease, background-color .5s ease;
+  cursor: pointer;
+}
+
+.chest:hover {
+  background-color: var(--color-bg-hovered);
+  box-shadow: 0px 0px 50px 10px;
+}
+
+.chest__top {
+  margin-bottom: 10px;
+}
+
+.chest__img {
+  max-width: 100%;
+}
+
+.chest__name {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* -------------- Inventory -------------- */
+.inventory {
+  padding: 80px 0;
+}
+
+.inventory__heading {
+  margin-bottom: 20px;
+}
+
+.inventory__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.inventory__stones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color-bg-light);
+  border-radius: 10px;
+}
+
+/* Inventory Stone */
+.inventory-stone {
+  flex: 0 1 calc(100% / 4 - 20px * 3 / 4);
+  border: 2px solid;
+  border-bottom: 20px solid;
+  cursor: pointer;
+}
+
+.inventory-stone__img {
+  max-width: 100%;
+}
+
+/* Stone Info */
+.inventory__stone-info {
+  position: relative;
+  flex-shrink: 0;
+  padding: 20px;
+  width: 300px;
+  background-color: var(--color-bg-light);
+  border-radius: 10px;
+}
+
+.stone-info__header {
+  margin-bottom: 10px;
+}
+
+.stone-info__img {
+  max-width: 100%;
+}
+
+.stone-info__name {
+  color: var(--color-text-lighter);
+}
+
+.stone-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stone-info__description {
+  color: var(--color-text);
+}
+
+.stone-info__rare {
+  font-weight: 500;
+}
+
+.stone-info__quantity {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  border-radius: 100%;
+}
+
+/* -------------- Information -------------- */
+.information__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.information__heading {
+  text-align: center;
+  font-size: 36px;
+  color: var(--color-text-lighter);
+}
+
+/* -------------- Sign In, Sign Up -------------- */
+.signin, .signup {
+  height: 100%;
+  background-image: url("../assets/images/common/hero/hero-bgc-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.signin__card, .signup__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Auth Card */
+.auth-card {
+  padding: 40px 50px;
+  width: 500px;
+  background-color: var(--color-bg-light);
+  border-radius: 10px;
+}
+
+.form__header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form__heading {
+  font-size: 36px;
+  color: var(--color-text-lighter);
+}
+
+.form__box + .form__box {
+  margin-top: 10px;
+}
+
+.form__button {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--color-text-lighter);
+  background-color: var(--color-main);
+  border-radius: 5px;
+  transition: background-color .2s ease;
+}
+
+.form__button:hover {
+  background-color: var(--color-main-light);
+}
+
+.form__footer {
+  margin-top: 10px;
+}
+
+/* Form Box */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-box__label {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-text-lighter);
+}
+
+.form-box__input {
+  padding: 10px;
+  font-size: 20px;
+  font-family: inherit;
+  color: var(--color-text-lighter);
+  outline: none;
+  border: none;
+  background-color: var(--color-bg);
+  border-radius: 5px;
+}
+
+.form-box__input:hover {
+  outline: 2px solid var(--color-main);
+}
+
+.form-box__input:focus {
+  outline: 2px solid var(--color-main-dark);
+}
+
+.form-suggestion {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-suggestion__text {
+  color: var(--color-text-light);
+}
+
+.form-suggestion__link {
+  color: var(--color-main);
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.form-suggestion__link:hover {
+  text-decoration: none;
+}
+
+/* -------------- General -------------- */
+.error__msg {
+  opacity: 0;
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.error .error__msg {
+  opacity: 1;
+  display: block;
+  font-weight: 500;
+  color: var(--color-error);
+}
+
+.error .form-box__input {
+  outline: 2px solid var(--color-error);
+  color: var(--color-error);
+}
+
+.success .form-box__input {
+  outline: 2px solid var(--color-success);
+  color: var(--color-success);
+}
+
+.empty .form-input__input {
+  outline: none;
+  color: none;
+}

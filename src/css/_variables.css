@@ -1,0 +1,38 @@
+/* -------------- Variables -------------- */
+:root {
+  --color-white: #fff;
+
+  --color-main-lighter: #7D97AE;
+  --color-main-light: #6284A4;
+  --color-main: #506F8C;
+  --color-main-dark: #3E5366;
+
+  --color-text-lighter: rgb(212, 212, 212);
+  --color-text-light: rgb(165, 165, 165);
+  --color-text: #777;
+  --color-text-dark: #555;
+  --color-text-darker: #333;
+
+  --color-text-lighter-hovered: rgb(212, 212, 212);
+
+  --color-bg-light: #333;
+  --color-bg: #222;
+
+  --color-bg-hovered: rgb(41, 41, 41);
+
+  --color-shadow: #222;
+
+  --color-stroke: #2b2b2b;
+
+  --color-ancient: #eb4b4b;
+  --color-arcana: #ade55c;
+  --color-immortal: #f3b644;
+  --color-legendary: #d32ce6;
+  --color-mythical: #8847ff;
+  --color-rare: #4b69ff;
+  --color-uncommon: #5e98d9;
+  --color-common: #b4d0f0;
+
+  --color-error: #C0392Bd0;
+  --color-success: #27ae5fd0;
+}

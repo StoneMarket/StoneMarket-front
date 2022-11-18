@@ -1,0 +1,112 @@
+@media (max-width: 1376px) {
+  /* Chests */
+  .chests__list {
+    grid-template-columns: repeat(auto-fill, 280px);
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Hero */
+  .hero {
+    height: 400px;
+  }
+
+  /* Nav */
+  .nav__list {
+    gap: 40px;
+  }
+
+  /* Stones */
+  .stones__list {
+    gap: 30px;
+  }
+
+  .stone {
+    flex: 0 1 calc(100% / 4 - 30px * 3 / 4);
+  }
+
+  /* Inventory Stone */
+  .inventory-stone {
+    flex: 0 1 calc(100% / 3 - 20px * 2 / 3);
+  }
+}
+
+
+@media (max-width: 860px) {
+  /* Hero */
+  .hero {
+    height: 300px;
+  }
+
+  /* Nav */
+  .nav {
+    display: none;
+  }
+
+  /* Stones */
+  .stones__list {
+    gap: 30px;
+  }
+
+  .stone {
+    flex: 0 1 calc(100% / 3 - 30px * 2 / 3);
+  }
+
+  /* Inventory Stone */
+  .inventory-stone {
+    flex: 0 1 calc(100% / 2 - 20px * 1 / 2);
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+    max-width: 640px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 200px;
+  }
+
+  /* Stones */
+  .stones__list {
+    gap: 40px;
+  }
+
+  .stone {
+    flex: 0 1 calc(100% / 2 - 40px * 1 / 2);
+  }
+
+  /* Chests */
+  .chests__list {
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 30px;
+  }
+
+  /* Inventory Stone */
+  .inventory-stone {
+    flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  /* Hero */
+  .hero {
+    height: 0;
+  }
+
+  .container {
+    max-width: 400px;
+  }
+
+  /* Stones */
+  .stones__list {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .stone {
+    flex: 0 1 70%;
+  }
+}

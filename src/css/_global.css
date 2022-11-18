@@ -1,0 +1,53 @@
+/* -------------- Global -------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.site-slogan {
+  font-size: 40px;
+}
+
+.section-heading {
+  font-size: 36px;
+  color: var(--color-text-light);
+}
+
+.stroke {
+  margin: 20px 0;
+  border: 1px solid var(--color-stroke);
+}
+
+/* Colors */
+.color-ancient {
+  color: var(--color-ancient);
+}
+
+.color-arcana {
+  color: var(--color-arcana);
+}
+
+.color-immortal {
+  color: var(--color-immortal);
+}
+
+.color-legendary {
+  color: var(--color-legendary);
+}
+
+.color-mythical {
+  color: var(--color-mythical);
+}
+
+.color-rare {
+  color: var(--color-rare);
+}
+
+.color-uncommon {
+  color: var(--color-uncommon);
+}
+
+.color-common {
+  color: var(--color-common);
+}
