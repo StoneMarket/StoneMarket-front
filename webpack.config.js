@@ -12,7 +12,7 @@ const isDev = process.env.NODE_ENV === "development";
 const target = isDev ? "web" : "browserslist";
 const devtool = isDev ? "source-map" : undefined;
 
-let htmlPageNames = ['stones'];
+let htmlPageNames = ['stones', 'signin', 'signup'];
 let multipleHtmlPlugins = htmlPageNames.map(name => {
   return new HtmlWebpackPlugin({
     template: `./src/${name}.html`,
@@ -27,7 +27,9 @@ export default {
   devtool,
   entry: {
     main: path.resolve(__dirname, "src", "index.js"),
-    stones: path.resolve(__dirname, "src", "stones.js")
+    stones: path.resolve(__dirname, "src", "stones.js"),
+    signin: path.resolve(__dirname, "src", "signin.js"),
+    signup: path.resolve(__dirname, "src", "signup.js"),
   },
   output: {
     path: path.resolve(__dirname, "dist"),

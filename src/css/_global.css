@@ -19,6 +19,10 @@
   border: 1px solid var(--color-stroke);
 }
 
+.display-none {
+  display: none;
+}
+
 /* Colors */
 .color-ancient {
   color: var(--color-ancient);

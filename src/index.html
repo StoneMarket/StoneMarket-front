@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <script src="./js/token.js" defer></script>
   <title>StoneMarket</title>
 </head>
 <body class="page__body">
@@ -31,8 +32,12 @@
           </li>
         </ul>
       </nav>
-      <div class="header__sign-in sign-in">
+      <div class="header__sign-in sign-in" id="headerSignInLink">
         <a class="sign-in__link" href="./signin.html">Войти</a>
+      </div>
+      <div class="header__user-profile user-profile" id="headerUserProfile">
+        <h3 class="user-profile__nickname">Долбаёб1442?</h3>
+        <div class="user-profile__avatar"></div>
       </div>
     </div>
   </header>

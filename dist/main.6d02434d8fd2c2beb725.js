@@ -37,14 +37,21 @@ module.exports = function (url, options) {
 /***/ 995:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "49b3696368d5fa0b69dc.svg";
+module.exports = __webpack_require__.p + "4922aee453296f5f2390.svg";
 
 /***/ }),
 
 /***/ 830:
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "219339bcdcc2707f82ee.svg";
+module.exports = __webpack_require__.p + "bb8bee732bd95213dbde.svg";
+
+/***/ }),
+
+/***/ 891:
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "92ac2321b64c5eb0a539.js";
 
 /***/ })
 
@@ -177,11 +184,13 @@ var getUrl_default = /*#__PURE__*/__webpack_require__.n(getUrl);
 // Imports
 
 var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(830), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(995), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(891), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(995), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = getUrl_default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = getUrl_default()(___HTML_LOADER_IMPORT_1___);
-var code = "<!DOCTYPE html> <html class=\"page\" lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"> <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/svg+xml\"> <title>StoneMarket</title> </head> <body class=\"page__body\"> <header class=\"header\"> <div class=\"header__container container\"> <div class=\"header__logo logo\"> <a class=\"logo__link\" href=\"./index.html\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"Stone Market\"> </a> </div> <nav class=\"header__nav nav\"> <ul class=\"nav__list list-reset\"> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./stones.html\">Камни</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./chests.html\">Сундуки</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./inventory.html\">Инвентарь</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./information.html\">Информация</a> </li> </ul> </nav> <div class=\"header__sign-in sign-in\"> <a class=\"sign-in__link\" href=\"./signin.html\">Войти</a> </div> </div> </header> <main class=\"main\"> <section class=\"hero\"> <div class=\"hero__container container\"></div> </section> <section class=\"about\"> <div class=\"about__container container\"> <h1 class=\"about__heading site-slogan\">Всё началось с камня</h1> <p class=\"about__description\">Попробуйте взглянуть на мир с точки зрения камня. Он существует вне нашего времени. Человеческая жизнь для него лишь мгновение, ведь камни которые вы можете видеть перед собой, были частью этого мира десятки, а то и сотни миллионов лет, и будут его частью столько же. Да, человек, обладая арсеналом инструментов может превратить случайный камень в пыль, но так он лишит его только физической формы. Пройдёт достаточно времени и различных геологических процессов, но в итоге всё что мы видим обратится в осадочную породу, и останки людей не исключение. Камень есть альфа и омега, с него всё началось и всё в него обратится, иными словами, камни есть вечность.</p> </div> </section> </main> </body> </html>";
+var ___HTML_LOADER_REPLACEMENT_2___ = getUrl_default()(___HTML_LOADER_IMPORT_2___);
+var code = "<!DOCTYPE html> <html class=\"page\" lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"> <link rel=\"icon\" href=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" type=\"image/svg+xml\"> <" + "script src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" defer=\"defer\"><" + "/script> <title>StoneMarket</title> </head> <body class=\"page__body\"> <header class=\"header\"> <div class=\"header__container container\"> <div class=\"header__logo logo\"> <a class=\"logo__link\" href=\"./index.html\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"Stone Market\"> </a> </div> <nav class=\"header__nav nav\"> <ul class=\"nav__list list-reset\"> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./stones.html\">Камни</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./chests.html\">Сундуки</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./inventory.html\">Инвентарь</a> </li> <li class=\"nav__item\"> <a class=\"nav__link\" href=\"./information.html\">Информация</a> </li> </ul> </nav> <div class=\"header__sign-in sign-in\" id=\"headerSignInLink\"> <a class=\"sign-in__link\" href=\"./signin.html\">Войти</a> </div> <div class=\"header__user-profile user-profile\" id=\"headerUserProfile\"> <h3 class=\"user-profile__nickname\">Долбаёб1442?</h3> <div class=\"user-profile__avatar\"></div> </div> </div> </header> <main class=\"main\"> <section class=\"hero\"> <div class=\"hero__container container\"></div> </section> <section class=\"about\"> <div class=\"about__container container\"> <h1 class=\"about__heading site-slogan\">Всё началось с камня</h1> <p class=\"about__description\">Попробуйте взглянуть на мир с точки зрения камня. Он существует вне нашего времени. Человеческая жизнь для него лишь мгновение, ведь камни которые вы можете видеть перед собой, были частью этого мира десятки, а то и сотни миллионов лет, и будут его частью столько же. Да, человек, обладая арсеналом инструментов может превратить случайный камень в пыль, но так он лишит его только физической формы. Пройдёт достаточно времени и различных геологических процессов, но в итоге всё что мы видим обратится в осадочную породу, и останки людей не исключение. Камень есть альфа и омега, с него всё началось и всё в него обратится, иными словами, камни есть вечность.</p> </div> </section> </main> </body> </html>";
 // Exports
 /* harmony default export */ var src = ((/* unused pure expression or super */ null && (code)));
 ;// CONCATENATED MODULE: ./src/index.js
